@@ -2,23 +2,31 @@
 using namespace std;
 
 int lower_bound(int arr[], int key, int size){
-    int high = size-1, low=0;
+    int low=0, high=size-1;
     while(low<=high){
         int mid = (low+high)/2;
-        if(arr[mid]<key){
+        if(arr[mid]==key){
+            
+        }
+        else if(arr[mid]<key){
             low=mid+1;
         }
         else{
             high=mid;
         }
     }
-    if(arr[low]<=key){
-        return low;
+    
+    return low;
+}
+
+int upperBound(int arr[], int size, int key){
+    int low=0, high=size-1, flag=0;
+    while(low<=high){
+        int mid=(low+high)/2;
+        if(arr[mid]>key){
+            
+        }
     }
-    if(arr[high]<=key){
-        return high;
-    }
-    return 0;
 }
 
 int main()
