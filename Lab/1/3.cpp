@@ -1,3 +1,4 @@
+//Min Distance between the points of 1D coordinates
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -72,6 +73,5 @@ int main()
     }
 
     cout<<min<<endl;
-
     return 0;
 }

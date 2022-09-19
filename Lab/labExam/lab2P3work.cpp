@@ -1,4 +1,3 @@
-//Activity Scheduling
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -71,8 +70,11 @@ int main()
     }
     mergeSort(a,0,n-1);
     int ans=1;
+
     int y;
+
     y=a[0].end;
+
     for(int i=0;i<n-1;i++){
         if(y<=a[i+1].start){
             ans++;

@@ -1,13 +1,12 @@
+//Fractional Knapsack
 #include<bits/stdc++.h>
 using namespace std;
-
 
 struct knapsack
 {
     int value;
     int weight;
 };
-
 
 void merge(knapsack arr[], int b, int mid, int e){
     int n = mid-b+1;
